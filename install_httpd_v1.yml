@@ -1,0 +1,8 @@
+---
+- name: install httpd on Application server
+  hosts: appserver
+  tasks:
+    - name: install httpd
+      yum:
+        name: httpd
+        state: latest
