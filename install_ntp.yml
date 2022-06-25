@@ -1,0 +1,8 @@
+---
+- name: install ntp on client server 
+  hosts: appserver
+  tasks: 
+    - name: install ntp
+      yum: 
+       name: ntp
+       state:latest
